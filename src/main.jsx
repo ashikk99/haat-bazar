@@ -22,7 +22,7 @@ const router = createBrowserRouter([
     ]
   }
 ], {
-  basename: import.meta.env.BASE_URL
+  basename: "/haat-bazar"
 })
 
 createRoot(document.getElementById('root')).render(
