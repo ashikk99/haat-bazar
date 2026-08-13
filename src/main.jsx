@@ -18,11 +18,12 @@ const router = createBrowserRouter([
       { index: true, element: <Home /> },
       { path: 'about', element: <About /> },
       { path: 'contact', element: <Contact /> },
-      {path: 'catagory', Component: Catagory}
-      
+      { path: 'catagory', element: <Catagory /> }
     ]
   }
-])
+], {
+  basename: import.meta.env.BASE_URL
+})
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
