@@ -15,10 +15,12 @@ const HeroBanner = () => {
                     <div className="z-10">
 
                         {/* Logo / Brand */}
+                        <div className="flex items-center gap-2">
+                            <img className='h-20 pb-5' src="/haat-bazar/logo.png" alt="" />
                         <h2 className="mb-5 text-3xl font-bold text-[#063b2b]">
                             Haat <span className="text-[#e8a817]">Bazar</span>
                         </h2>
-
+</div>
                         {/* Heading */}
                         <h1 className="text-4xl font-extrabold leading-tight text-[#063b2b] md:text-5xl lg:text-6xl">
                             Shop the Best,
@@ -87,7 +89,7 @@ const HeroBanner = () => {
                             Free Delivery
                         </h3>
                         <p className="text-sm text-gray-500">
-                            Orders over ৳999
+                            Orders over ৳2000
                         </p>
                     </div>
 
