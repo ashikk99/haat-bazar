@@ -11,7 +11,7 @@ const Navbar = () => {
     <li><NavLink to="/catagory">Catagory</NavLink></li>
     </>
     return (
-        <div className="navbar w-5/6 mx-auto bg-base-100 shadow-sm rounded-lg px-15">
+        <div className="navbar w-5/6 mx-auto bg-base-100 shadow-sm rounded-lg lg:px-15">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -24,7 +24,7 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <img className='h-15' src="/haat-bazar/logo.png" alt="" />
-                <NavLink className=" text-3xl font-bold text-[#063b2b]"  to="/">Haat <span className="text-[#e8a817]">Bazar</span> </NavLink>
+                <NavLink className=" text-sm lg:text-3xl font-bold text-[#063b2b]"  to="/">Haat <span className="text-[#e8a817]">Bazar</span> </NavLink>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">

@@ -54,7 +54,7 @@ const HeroBanner = () => {
                     </div>
 
                     {/* Right Product Area */}
-                    <div className="relative flex min-h-[350px] items-center justify-center">
+                    <div className="relative flex lg:min-h-[350px] items-center justify-center">
 
                         {/* Yellow Circle */}
 
