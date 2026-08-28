@@ -9,6 +9,8 @@ import About from './page/About/About.jsx'
 import Contact from './page/Contact/Contact.jsx'
 import Catagory from './page/Catagory/Catagory.jsx'
 import AllProducts from './page/AllProducts/AllProducts.jsx'
+import DashboardLayout from './Dashboard/DashboardLayout.jsx'
+import Overview from './Dashboard/Overview.jsx'
 // import Contact from './page/About/Contact/Contact.jsx'
 
 const router = createBrowserRouter([
@@ -22,7 +24,14 @@ const router = createBrowserRouter([
       { path: 'catagory', element: <Catagory /> },
       {path: 'allproducts', Component: AllProducts}
     ]
+  },
+  {
+    path: "/dashboard", Component: DashboardLayout,
+    children:[
+      {index: true, Component: Overview}
+    ]
   }
+
 ], {
   basename: "/haat-bazar"
 })
