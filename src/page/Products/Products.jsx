@@ -1,26 +1,63 @@
-import React from 'react';
+import React from "react";
+import { useNavigate } from "react-router";
 
-const Products = () => {
+const Products = ({ product }) => {
+
+    const navigate = useNavigate();
+
+    const handleBuyNow = () => {
+        navigate("/order", {
+            state: {
+                product: product
+            }
+        });
+    };
+
     return (
-        <div className="card bg-base-100  shadow-sm">
+        <div className="card bg-base-100 w-full max-w-full shadow-sm">
+
             <figure>
                 <img
-                    src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                    alt="Shoes" />
+                    src={product?.image}
+                    alt={product?.name}
+                    className="w-full h-full object-cover"
+                />
             </figure>
-            <div className="card-body">
-                <h2 className="card-title">
-                    Card Title
-                    <div className="badge badge-secondary">NEW</div>
+
+            <div className="card-body p-4">
+
+                <h2 className="card-title text-lg">
+                    {product?.name}
+
+                    <div className="badge badge-secondary">
+                        NEW
+                    </div>
                 </h2>
-                <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
-                <div className="card-actions justify-end">
-                    <div className="badge badge-outline">Fashion</div>
-                    <div className="badge badge-outline">Products</div>
+
+                <p className="text-sm text-gray-600">
+                    {product?.description}
+                </p>
+
+                <div className="flex">
+                    <p className="text-xl font-bold text-green-700">
+                        ৳{product?.price}
+                    </p>
+
+                    <div className="card-actions justify-between items-center">
+
+                        <button
+                            onClick={handleBuyNow}
+                            className="btn btn-sm bg-[#063b2b] text-white hover:bg-[#0b5741]"
+                        >
+                            Buy Now
+                        </button>
+
+                    </div>
                 </div>
+
             </div>
         </div>
     );
-}
+};
 
 export default Products;

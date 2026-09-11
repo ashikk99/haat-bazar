@@ -1,16 +1,15 @@
 import React from 'react';
-import Products from '../Products/Products';
+import Card from '../../components/Card';
 
 const AllProducts = () => {
     return (
-        <div className='grid grid-rows-1 md:grid-cols-3 lg:grid-cols-4
-         gap-20 w-5/6 mx-auto my-10'>
-            <Products></Products>
-            <Products></Products>
-            <Products></Products>
-            <Products></Products>
-            <Products></Products>
-            <Products></Products>
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-4 w-6/7 mx-auto'>
+            <Card></Card>
+            <Card></Card>
+            <Card></Card>
+            <Card></Card>
+            <Card></Card>
+            <Card></Card>
         </div>
     );
 }

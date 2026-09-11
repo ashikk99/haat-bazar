@@ -11,6 +11,12 @@ import Catagory from './page/Catagory/Catagory.jsx'
 import AllProducts from './page/AllProducts/AllProducts.jsx'
 import DashboardLayout from './Dashboard/DashboardLayout.jsx'
 import Overview from './Dashboard/Overview.jsx'
+import AddProducts from './Dashboard/AddProducts.jsx'
+import Orders from './Dashboard/Orders.jsx'
+import Products from './page/Products/Products.jsx'
+import AddProductsShow from './Dashboard/AddProductsShow.jsx'
+import OrderForm from './page/OrderForm/OrderForm.jsx'
+import Users from './Dashboard/Users.jsx'
 // import Contact from './page/About/Contact/Contact.jsx'
 
 const router = createBrowserRouter([
@@ -22,14 +28,39 @@ const router = createBrowserRouter([
       { path: 'about', element: <About /> },
       { path: 'contact', element: <Contact /> },
       { path: 'catagory', element: <Catagory /> },
-      {path: 'allproducts', Component: AllProducts}
+      { path: 'allproducts', Component: AllProducts },
+      {path: 'order', Component: OrderForm}
     ]
   },
   {
-    path: "/dashboard", Component: DashboardLayout,
-    children:[
-      {index: true, Component: Overview}
-    ]
+    path: "/dashboard",
+    element: <DashboardLayout />,
+    children: [
+      {
+        index: true,
+        element: <Overview />,
+      },
+      {
+        path:"products",
+        element: <AddProductsShow></AddProductsShow>
+      },
+      {
+        path: "add-product",
+        element: <AddProducts />,
+      },
+      {
+        path: "orders",
+        element: <Orders />,
+      },
+      {
+        path: "users",
+        element: <Users />,
+      },
+      // {
+      //   path: "settings",
+      //   element: <Settings />,
+      // },
+    ],
   }
 
 ], {

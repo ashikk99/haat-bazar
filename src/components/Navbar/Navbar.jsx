@@ -5,10 +5,11 @@ const Navbar = () => {
 
     const links = <>
     <li><NavLink to="/">Home</NavLink></li>
+    <li><NavLink to="/catagory">Catagory</NavLink></li>
     <li><NavLink to="allproducts">All Products</NavLink></li>
     <li><NavLink to="/about">About</NavLink></li>
     <li><NavLink to="/contact">Contact</NavLink></li>
-    <li><NavLink to="/catagory">Catagory</NavLink></li>
+    
     </>
     return (
         <div className="navbar w-5/6 mx-auto bg-base-100 shadow-sm rounded-lg lg:px-15">
