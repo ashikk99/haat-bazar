@@ -89,7 +89,7 @@ const ProductCarousel = () => {
     };
 
     return (
-        <section className="py-10 w-11/12 lg:w-6/7 mx-auto">
+        <section className="py-10 w-11/12 lg:w-7/6 mx-auto">
 
             {/* Heading */}
             <div className="text-center mb-8">

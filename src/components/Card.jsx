@@ -18,8 +18,8 @@ const Card = () => {
         <div className="
             card
             bg-base-100
-            w-[300px]
-            h-[400px]
+            w-[250px]
+            h-[300px]
             md:w-[250px]
             md:h-[350px]
             lg:w-[250px]

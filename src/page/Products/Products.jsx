@@ -14,7 +14,7 @@ const Products = ({ product }) => {
     };
 
     return (
-        <div className="card bg-base-100 w-full max-w-full shadow-sm">
+        <div className="card bg-base-100 w-[250px] h-[300px] max-w-full shadow-sm">
 
             <figure>
                 <img
