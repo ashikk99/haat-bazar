@@ -24,10 +24,11 @@ const Card = () => {
             md:h-[350px]
             lg:w-[250px]
             lg:h-[300px]
-            xl:w-[350px]
+            // xl:w-[300px]
             
             shadow-md
             my-5
+            p-2
             mx-auto
         ">
 

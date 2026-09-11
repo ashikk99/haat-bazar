@@ -89,7 +89,7 @@ const ProductCarousel = () => {
     };
 
     return (
-        <section className="py-10 w-11/12 lg:w-7/6 mx-auto">
+        <section className="py-10 w-5/6 mx-auto">
 
             {/* Heading */}
             <div className="text-center mb-8">
@@ -176,6 +176,8 @@ const ProductCarousel = () => {
                     grid-cols-1
                     sm:grid-cols-2
                     md:grid-cols-3
+                    lg:grid-cols-4
+                    xl:grid-cols-5
                     gap-6
                     // justify-items-center
                     lg:hidden
